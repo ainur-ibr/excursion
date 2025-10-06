@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Excursion — Record & Share Your Adventures</title>
+  <link rel="stylesheet" href="resources/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Excursion</h1>
+      <nav><a href="#download" class="cta">Download</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="resources/videos/stock.mp4" type="video/mp4" />
+        Sorry — your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay">
+        <h2>Capture your journeys. Share your story.</h2>
+        <p>Excursion helps you record moments and share them with friends.</p>
+        <a id="download" class="btn" href="#">Get Excursion</a>
+        <p class="phone">
+          <img src="resources/images/cellphone.png" alt="Cellphone icon" />
+        </p>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h3>Features</h3>
+      <ul>
+        <li>Easy recording and tagging</li>
+        <li>One-tap sharing</li>
+        <li>Map-backed timeline</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Excursion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
